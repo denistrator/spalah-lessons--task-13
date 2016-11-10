@@ -24,9 +24,59 @@
     }
 }
 
-@mixin blocks-justify {
-    text-align: justify;
-    text-justify: newspaper;
+// You can add your own mixins here:
+
+// Toggles
+//
+// Used in conjunction with global variables to enable certain theme features.
+
+@mixin box-shadow($shadow...) {
+  @if $enable-shadows {
+    box-shadow: $shadow;
+  }
 }
 
-// You can add your own mixins here:
+@mixin transition($transition...) {
+  @if $enable-transitions {
+    transition: $transition;
+  }
+}
+
+// Utilities
+@import "bower_components/bootstrap/scss/mixins/breakpoints";
+@import "bower_components/bootstrap/scss/mixins/hover";
+@import "bower_components/bootstrap/scss/mixins/image";
+@import "bower_components/bootstrap/scss/mixins/tag";
+@import "bower_components/bootstrap/scss/mixins/reset-filter";
+@import "bower_components/bootstrap/scss/mixins/resize";
+@import "bower_components/bootstrap/scss/mixins/screen-reader";
+@import "bower_components/bootstrap/scss/mixins/size";
+@import "bower_components/bootstrap/scss/mixins/tab-focus";
+@import "bower_components/bootstrap/scss/mixins/reset-text";
+@import "bower_components/bootstrap/scss/mixins/text-emphasis";
+@import "bower_components/bootstrap/scss/mixins/text-hide";
+@import "bower_components/bootstrap/scss/mixins/text-truncate";
+
+// Components
+@import "bower_components/bootstrap/scss/mixins/alert";
+@import "bower_components/bootstrap/scss/mixins/buttons";
+@import "bower_components/bootstrap/scss/mixins/cards";
+@import "bower_components/bootstrap/scss/mixins/pagination";
+@import "bower_components/bootstrap/scss/mixins/lists";
+@import "bower_components/bootstrap/scss/mixins/list-group";
+@import "bower_components/bootstrap/scss/mixins/nav-divider";
+@import "bower_components/bootstrap/scss/mixins/forms";
+@import "bower_components/bootstrap/scss/mixins/progress";
+@import "bower_components/bootstrap/scss/mixins/table-row";
+
+// Skins
+@import "bower_components/bootstrap/scss/mixins/background-variant";
+@import "bower_components/bootstrap/scss/mixins/border-radius";
+@import "bower_components/bootstrap/scss/mixins/gradients";
+
+// // Layout
+@import "bower_components/bootstrap/scss/mixins/clearfix";
+@import "bower_components/bootstrap/scss/mixins/navbar-align";
+@import "bower_components/bootstrap/scss/mixins/grid-framework";
+@import "bower_components/bootstrap/scss/mixins/grid";
+@import "bower_components/bootstrap/scss/mixins/float";
