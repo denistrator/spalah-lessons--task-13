@@ -11,7 +11,7 @@
 
 ## Team
 
-* Kamenev Andrew @AndrewKamenev
-* Natashkina Victoria @Natashkina
-* Onoprienko Artem @OnoprienkoArtem
-* Belevtsov Denis @denistrator
+* Kamenev Andrew [@AndrewKamenev](https://github.com/AndrewKamenev)
+* Natashkina Victoria [@Natashkina](https://github.com/Natashkina)
+* Onoprienko Artem [@OnoprienkoArtem](https://github.com/OnoprienkoArtem)
+* Belevtsov Denis [@denistrator](https://github.com/denistrator)
