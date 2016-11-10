@@ -1,0 +1,17 @@
+{
+  "name": "no_sock",
+  "description": "Makeup of \"No Sock\"",
+  "main": "gulpfile.js",
+  "authors": [
+    "denis <denistrator@yandex.ua>"
+  ],
+  "license": "ISC",
+  "homepage": "https://github.com/denistrator/spalah-lessons--task-13",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
