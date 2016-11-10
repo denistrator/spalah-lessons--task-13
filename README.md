@@ -7,7 +7,8 @@
 1. Get repository
 2. Launch console from project folder
 3. Enter "npm i"
-4. Enter "tars dev" to start working
+4. Enter "bower i"
+5. Enter "tars dev" to start working
 
 ## Team
 
