@@ -1,0 +1,26 @@
+<div class="container">
+	<div class="cards">
+		<div class="row">
+			{{#each productsRecommendation}}
+				<div class="col-md-3 col-sm-4 col-xs-6">
+					<a href="#" class="card-holder card-recommendation">
+						<div class="card-img-holder"><img src="static/img/content/products/{{imgName}}.png" alt="Nosok img" class="card-img"></div>
+						<div class="card-visible-overlay">
+							<div class="card-price">
+								<span class="card-price-text">{{price}}</span>
+							</div>
+						</div>
+						<div class="card-overlay">
+							<div class="card-text-holder">
+								<h4 class="card-title">{{title}}</h4>
+								<p class="card-desc">{{desc}}</p>
+							</div>
+							<button class="card-btn card-btn-cart">cart</button>
+							<button class="card-btn card-btn-wishlist">add</button>
+						</div>
+					</a>
+				</div>
+			{{/each}}
+		</div>
+	</div>
+</div>
