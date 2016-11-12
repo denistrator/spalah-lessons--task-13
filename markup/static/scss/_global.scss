@@ -87,3 +87,15 @@ div[class *="img-holder"] {
 .por {
 	position: relative;
 }
+
+.ver-indents {
+	&-parent {
+		overflow: hidden;
+		margin-top: -$grid-gutter-width-base / 2;
+		margin-bottom: -$grid-gutter-width-base / 2;
+	}
+	&-child {
+		margin-top: $grid-gutter-width-base / 2;
+		margin-bottom: $grid-gutter-width-base / 2;
+	}
+}
