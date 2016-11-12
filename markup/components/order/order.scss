@@ -1,0 +1,55 @@
+div {
+  box-sizing: border-box;
+}
+.table {
+  display: table;
+  border: solid 1px black;
+  padding: 20px;
+}
+.cell {
+  display: table-cell;
+  vertical-align: middle;
+  /* height: 500px; */
+   /* border: solid 1px red; */
+}
+.img-wrap {
+  height: 100px;
+  padding-right: 50px;
+}
+.img-wrap img {
+  height: 100%;
+  width: auto;
+}
+.count {
+  text-align: center;
+  padding-left: 50px;
+  width: 200px;
+}
+.count:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+.count-link {
+  float: left;
+  width: 40px;
+  height: 40px;
+  text-decoration: none;
+  text-align: center;
+  border: solid 1px black;
+  line-height: 40px;
+  margin-left: -1px;
+  background: transparent;
+  outline: none;
+}
+input.count-link {
+  padding: 0;
+}
+.sum {
+  width: 130px;
+  text-align: center;
+}
+.add {
+  text-align: right;
+  width: 130px;
+}
