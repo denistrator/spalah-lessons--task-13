@@ -1,0 +1,24 @@
+.pagination {
+	&-control {
+
+	}
+	&-list {
+		@include nl();
+	}
+	&-item {
+		display: inline-block;
+		&.active {
+			cursor: default;
+		}
+		&.active,
+		&:hover {
+			text-decoration: underline;
+		}
+	}
+	&-link {
+		padding: 0 6px;
+		font-size: 24px;
+		text-decoration: none;
+		color: #000;
+	}
+}
