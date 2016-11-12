@@ -1,0 +1,25 @@
+<div class="container">
+	<div class="cards">
+		<div class="row">
+			{{#each products}}
+				<div class="col-md-4 col-sm-6">
+					<a href="#" class="card-holder">
+						<div class="card-img-holder"><img src="static/img/content/products/{{imgName}}.png" alt="Nosok img" class="card-img"></div>
+						<div class="card-visible-overlay">
+							<div class="card-price">
+								<span class="card-price-text">{{price}}</span>
+							</div>
+						</div>
+						<div class="card-overlay">
+							<button class="card-add-to-wishlist">add</button>
+							<div class="card-text-holder">
+								<h4 class="card-title">{{title}}</h4>
+								<p class="card-desc">{{desc}}</p>
+							</div>
+						</div>
+					</a>
+				</div>
+			{{/each}}
+		</div>
+	</div>
+</div>
