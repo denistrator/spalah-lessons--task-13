@@ -1582,3 +1582,238 @@ $CustomFont: 'CustomFont', Helvetica, Arial, sans-serif;
     margin-left: 91.66667%;
   }
 }
+
+html {
+  box-sizing: border-box;
+  height: 100%;
+}
+
+*,
+:before,
+:after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.wrapper {
+  overflow: hidden;
+  display: table;
+  width: 100%;
+  height: 100%;
+  height: 100vh;
+  max-width: 1920px;
+  margin: 0 auto;
+  table-layout: fixed;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+  height: auto;
+  margin: auto;
+}
+
+div[class*="logo-holder"],
+div[class*="img-holder"] {
+  font-size: 0;
+}
+
+.js-fine-align-landscape {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: -50%;
+  right: -50%;
+  height: 100%;
+  max-width: none;
+  width: auto;
+  margin: auto;
+}
+
+.js-fine-align-portrait {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: -100%;
+  bottom: -100%;
+  height: auto;
+  max-width: none;
+  width: 100%;
+  margin: auto;
+}
+
+.inline-block-align > * {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-uppercase {
+  text-transform: uppercase;
+}
+
+.pull-left {
+  float: left;
+}
+
+.pull-right {
+  float: right;
+}
+
+.por {
+  position: relative;
+}
+
+.cards {
+  margin-top: -15px;
+  margin-bottom: -15px;
+}
+
+.card-holder {
+  position: relative;
+  padding-bottom: 100%;
+  display: block;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  color: #000;
+}
+
+.card-holder:hover .card-img-holder {
+  -webkit-transform: translate(0, -5.98291%);
+          transform: translate(0, -5.98291%);
+}
+
+.card-holder:hover .card-overlay {
+  opacity: 1;
+  z-index: 1;
+}
+
+.card-holder:hover .card-visible-overlay:after {
+  -webkit-transform: scale(1, 1);
+          transform: scale(1, 1);
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.card-holder:hover .card-visible-overlay:before {
+  -webkit-transform: scale(1, 1);
+          transform: scale(1, 1);
+  -webkit-transition-delay: 0.3s;
+          transition-delay: 0.3s;
+}
+
+.card-img-holder {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.card-overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  opacity: 0;
+  z-index: -9999;
+  -webkit-transition: opacity 0.2s;
+  transition: opacity 0.2s;
+}
+
+.card-visible-overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+}
+
+.card-visible-overlay:after, .card-visible-overlay:before {
+  content: '';
+  display: block;
+  position: absolute;
+  right: 0;
+  background-color: currentColor;
+}
+
+.card-visible-overlay:after {
+  top: 0;
+  width: 1px;
+  height: 100%;
+  -webkit-transform-origin: top;
+          transform-origin: top;
+  -webkit-transform: scale(1, 0);
+          transform: scale(1, 0);
+  -webkit-transition: all 0.3s 0.3s;
+  transition: all 0.3s 0.3s;
+}
+
+.card-visible-overlay:before {
+  bottom: 0;
+  width: 100%;
+  height: 1px;
+  -webkit-transform-origin: right;
+          transform-origin: right;
+  -webkit-transform: scale(0, 1);
+          transform: scale(0, 1);
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.card-add-to-wishlist {
+  width: 31px;
+  height: 25px;
+  margin-top: 16px;
+  margin-left: 2px;
+  font-size: 0;
+  border: none;
+  outline: none;
+  background: transparent url("../img/general/wish-list-icon.png") no-repeat center/contain;
+}
+
+.card-price {
+  position: absolute;
+  bottom: 15.56196%;
+  left: 0;
+  -webkit-transform: rotate(-90deg);
+          transform: rotate(-90deg);
+  -webkit-transform-origin: left top;
+          transform-origin: left top;
+}
+
+.card-price-text {
+  font-size: 30px;
+  font-weight: 700;
+}
+
+.card-text-holder {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  text-align: right;
+  padding: 13px 38px;
+}
+
+.card-title {
+  margin: 0;
+  margin-right: 2px;
+  font-size: 24px;
+  font-weight: 400;
+}
+
+.card-desc {
+  margin: 0;
+  font-size: 18px;
+  font-weight: 400;
+}
