@@ -1,25 +1,33 @@
-div {
-  box-sizing: border-box;
+.order {
+   
+    &-sum {
+      width: 130px;
+      text-align: center;
+    }
+    &-add {
+      text-align: right;
+      width: 130px;
+    }
+    &-img {
+      height: 100px;
+      padding-right: 50px;
+    }
+    &-img img {
+      height: 100%;
+      width: auto;
+    }
+    .table {
+      display: table;
+      border: solid 1px black;
+      padding: 20px;
+    }
+    .cell {
+      display: table-cell;
+      vertical-align: middle;
+    }    
 }
-.table {
-  display: table;
-  border: solid 1px black;
-  padding: 20px;
-}
-.cell {
-  display: table-cell;
-  vertical-align: middle;
-  /* height: 500px; */
-   /* border: solid 1px red; */
-}
-.img-wrap {
-  height: 100px;
-  padding-right: 50px;
-}
-.img-wrap img {
-  height: 100%;
-  width: auto;
-}
+
+
 .count {
   text-align: center;
   padding-left: 50px;
@@ -45,11 +53,4 @@ div {
 input.count-link {
   padding: 0;
 }
-.sum {
-  width: 130px;
-  text-align: center;
-}
-.add {
-  text-align: right;
-  width: 130px;
-}
+

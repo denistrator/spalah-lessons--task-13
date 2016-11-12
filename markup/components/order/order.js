@@ -1,24 +1,23 @@
-var count = 1;
-var price = $('.sum p').html();
-$(".plus").click(function(){
-	count++;
-	$(".amount").val(count);
-  countSum(count);
-})
-$(".minus").click(function(){
-if(count > 1){
-		count--;
-	$(".amount").val(count);
-  countSum(count);
-}
+var currenVal = $("#input-numbers-input").val();
+var price = $('.order-sum p').html();
+// $(".plus").click(function(){
+// 	count++;
+// 	$(".amount").val(count);
+//   countSum(count);
+// })
+// $(".minus").click(function(){
+// if(count > 1){
+// 		count--;
+// 	$(".amount").val(count);
+//   countSum(count);
+// }
 
-})
+// })
 function countSum(count){
-	$('.sum p').html(count*price);
+	$('.order-sum p').html(currenVal*price);
 };
 
 $("input").on('change', function(){
-	count = $(".amount").val();
-  countSum(count);
+	countSum(currenVal);
 });
 
