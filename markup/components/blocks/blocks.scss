@@ -1,0 +1,27 @@
+ $block-inverse-color: #fff !default;
+
+.block {
+	&-title {
+
+	}
+	&-inverse {
+		color: $block-inverse-color;
+		h1,h2,h3,h4,h5,h6,
+		.h1,.h2,.h3,.h4,.h5,.h6 {
+			color: inherit;
+		}
+		&-accent {
+			// color: $accent-color;
+		}
+	}
+}
+.bg {
+	&-dark {
+		background-color: #222;
+	}
+}
+.p {
+	&-md {
+
+	}
+}
