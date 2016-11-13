@@ -22,7 +22,8 @@ module.exports = {
             "useHMR": false
         },
         "jsPathsToConcatBeforeModulesJs": [
-            "bower_components/jquery/dist/jquery.min.js"
+            "bower_components/jquery/dist/jquery.min.js",
+            "bower_components/owl-carousel/owl-carousel/owl.carousel.min.js"
             // "bower_components/tether/dist/js/tether.min.js",
             // "bower_components/bootstrap/dist/js/bootstrap.min.js"
         ],
