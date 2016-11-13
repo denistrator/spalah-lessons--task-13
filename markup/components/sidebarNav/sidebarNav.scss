@@ -1,0 +1,38 @@
+.sidebar-nav {
+	margin-top: -55px;
+	overflow: hidden;
+	text-decoration: none;
+	&-list {
+		@include nl();
+	}
+	&-item {
+		&:first-child {
+			margin-bottom: 4px;
+		}
+	}
+	&-section-link {
+		margin: 0;
+		margin-top: 55px;
+		color: #000;
+		text-decoration: none;
+		&:not(.current):hover,
+		&:not(.current).active {
+			text-decoration: underline;
+		}
+		&.current {
+			cursor: default;
+		}
+	}
+	&-link {
+		@extend .sidebar-nav-section-link;
+		display: inline-block;
+		margin: 4px 0;
+		&.current {
+			text-decoration: underline;
+		}
+	}
+	a {
+		color: inherit;
+		text-decoration: inherit;
+	}
+}

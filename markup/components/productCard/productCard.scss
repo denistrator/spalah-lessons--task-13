@@ -1,0 +1,186 @@
+.cards {
+	@extend .ver-indents-parent; // this is in "global"
+}
+.card {
+	&-holder {
+		@extend .ver-indents-child; // this is in "global"
+		position: relative;
+		padding-bottom: 100%;
+		display: block;
+		color: #000;
+		&:hover {
+			.card-img-holder {
+				transform: translate(0, -(70 / 1170 * 100%));
+			}
+			.card-overlay {
+				opacity: 1;
+				z-index: 1;
+			}
+			.card-visible-overlay {
+				&:after {
+					transform: scale(1, 1);
+					transition: all 0.3s;
+				}
+				&:before {
+					transform: scale(1, 1);
+					transition-delay: 0.3s;
+				}
+			}
+		}
+	}
+	&-img-holder {
+		position: absolute;
+		top: 0;
+		bottom: 0;
+		left: 0;
+		right: 0;
+
+		transition: all 0.3s;
+	}
+	&-img {
+	}
+	&-overlay {
+		position: absolute;
+		top: 0;
+		bottom: 0;
+		left: 0;
+		right: 0;
+
+		opacity: 0;
+		z-index: -9999;
+		transition: opacity 0.2s;	
+	}
+	&-visible-overlay {
+		position: absolute;
+		top: 0;
+		bottom: 0;
+		right: 0;
+		left: 0;
+
+		&:after, &:before {
+			content: '';
+			display: block;
+			position: absolute;
+			right: 0;
+			background-color: currentColor;
+		}
+		&:after {
+			top: 0;
+			width: 1px;
+			height: 100%;
+			
+			transform-origin: top;
+			transform: scale(1, 0);
+			transition: all 0.3s 0.3s;
+		}
+		&:before {
+			bottom: 0;
+			width: 100%;
+			height: 1px;
+			
+			transform-origin: right;
+			transform: scale(0, 1);
+			transition: all 0.3s;
+		}
+	}
+	&-btn {
+		position: absolute;
+		top: 16px;
+		left: 2px;
+		font-size: 0;
+		border: none;
+		outline: none;
+
+		&-wishlist {
+			width: 31px;
+			height: 25px;
+			background: transparent url('../img/general/wish-list-icon.png') no-repeat center/contain;
+		}
+		&-cart {
+			width: 19px;
+			height: 23px;
+			background: transparent url('../img/general/cart-icon.png') no-repeat center/contain;
+		}
+	}
+	&-price {
+		position: absolute;
+		bottom: (54 / 347 * 100%);
+		left: 0;
+		transform: rotate(-90deg);
+		transform-origin: left top;
+	}
+	&-price-text {
+		font-size: 30px;
+		font-weight: 700;
+	}
+	&-text-holder {
+		position: absolute;
+	    bottom: 0;
+	    right: 0;
+	    text-align: right;
+	    padding: 13px 38px;
+	}
+	&-title {
+		margin: 0;
+		margin-right: 2px;
+		font-size: 24px;
+		font-weight: 400;
+	}
+	&-desc {
+		margin: 0;
+		font-size: 18px;
+		font-weight: 400;
+	}
+	&-recommendation {
+		.card-visible-overlay:before,
+		.card-visible-overlay:after {
+			content: none;
+			display: none;
+		}
+		.card-btn {
+			left: auto;
+			right: 0;
+			
+			&-wishlist {
+				width: 25px;
+				height: 19px;
+				bottom: 32%;
+				top: auto;
+			}
+			&-cart {
+				top: 32%;
+				bottom: auto;
+			}
+		}
+		.price {
+			position: absolute;
+			bottom: 50%;
+			left: -4px;
+			transform: translateY(50%) rotate(-90deg);
+			transform-origin: center;
+		}
+		.card-price-text {
+			font-size: 20px;
+		}
+		.card-text-holder {
+			position: absolute;
+			top: 0;
+		    bottom: 0;
+		    right: 0;
+		    left: 0;
+		    padding: 0;
+		    text-align: left;
+		}
+		.card-title {
+			font-size: 16px;
+		}
+		.card-desc {
+			position: absolute;
+			bottom: 0;
+			right: 0;
+			left: 0;
+			text-align: right;
+			font-size: 13px;
+		}
+	}
+}
