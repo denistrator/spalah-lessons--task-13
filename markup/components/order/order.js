@@ -20,3 +20,6 @@ $('.input-numbers-btn-plus').on('click', function(){
      var priceItem = $(this).parent().parent().next().children().children().html();
     countSum($(this), priceItem, amount);   
 })
+$('.order-close').click(function(){
+    $(this).parent().parent(".order").hide();
+})

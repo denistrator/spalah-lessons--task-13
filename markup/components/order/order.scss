@@ -42,7 +42,32 @@
       vertical-align: middle;
     }    
 }
-
+.order-close {
+  position: relative;
+  background: transparent;
+  border: none;
+  margin-right: 30px;
+  &:after, &:before {
+    content: "";
+    display: block;
+    width: 24px;
+    height: 2px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: black;
+    transform: rotate(45deg);
+  }
+  &:before {
+    transform: rotate(-45deg);
+  }
+}
+.order-wrapper .order-close {
+  display: none;
+}
+.cart-wrapper .order-add-btn {
+  display: none;
+}
 
 @media all and (max-width: 768px) {
    
