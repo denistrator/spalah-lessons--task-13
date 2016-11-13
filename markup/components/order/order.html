@@ -1,18 +1,19 @@
-<div class="order-wrapper">
+{{#each orderList}}
   <div class="order table">
-    <div class="order-img cell"><img src="../static/img/content/products/sock-yellow.png" alt=""></div>
+    <div class="order-img cell"><img src="static/img/content/products/{{imgName}}.jpg" alt=""></div>
     <div class="order-title cell">
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam architecto accusamus est voluptatibus, vero, eaque hic repellat, animi explicabo dolor voluptates possimus placeat alias ut aliquam aut veritatis eius! Harum?</p>
+      <p>{{title}} <br>
+          {{desc}}</p>
     </div>
-    <div class="cell">
+    <div class="count cell">
       {{>inputTypeNumber/inputTypeNumber}}
     </div>
     <div class="order-sum cell">
-      <p>1.50</p>
+      <p>$<span>{{price}}</span></p>
     </div>
     <div class="order-add cell">
          <button class="btn">Add to cart</button>
     </div>
     </div>
-</div>
+{{/each}}
 

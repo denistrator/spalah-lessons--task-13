@@ -1,23 +1,22 @@
-var currenVal = $("#input-numbers-input").val();
-var price = $('.order-sum p').html();
-// $(".plus").click(function(){
-// 	count++;
-// 	$(".amount").val(count);
-//   countSum(count);
-// })
-// $(".minus").click(function(){
-// if(count > 1){
-// 		count--;
-// 	$(".amount").val(count);
-//   countSum(count);
-// }
 
-// })
-function countSum(count){
-	$('.order-sum p').html(currenVal*price);
+function countSum(item, priceItem, amount){
+	var sumPrice = $(item).parent().parent().next().children().children();
+    sumPrice.html(priceItem*amount);
 };
 
-$("input").on('change', function(){
-	countSum(currenVal);
+$(".input-numbers-input").on('change', function(){
+    var priceItem = $(this).parent().parent().next().children().children().html();
+    var amount = $(this).val();
+    var item = $(this);
+    countSum(item, priceItem, amount);
 });
-
+$('.input-numbers-btn-minus').on('click', function(){
+    var amount = $(this).next('.input-numbers-input').val();
+     var priceItem = $(this).parent().parent().next().children().children().html();
+    countSum($(this), priceItem, amount);   
+})
+$('.input-numbers-btn-plus').on('click', function(){
+    var amount = $(this).prev('.input-numbers-input').val();
+     var priceItem = $(this).parent().parent().next().children().children().html();
+    countSum($(this), priceItem, amount);   
+})

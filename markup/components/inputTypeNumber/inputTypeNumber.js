@@ -1,9 +1,7 @@
 $(function() {
-	var countPlus = $("#input-numbers-plus");
-	var countMinus = $("#input-numbers-minus");
-	var countInput = $("#input-numbers-input");
-
-	var currenVal = countInput.val();
+	var countPlus = $(".input-numbers-btn-plus");
+	var countMinus = $(".input-numbers-btn-minus");
+	var countInput = $(".input-numbers-input");
 
 	// fallbacks
 	countInput.attr("type", "text");
@@ -12,10 +10,12 @@ $(function() {
 	countMinus.removeClass("no-js");
 
 	countPlus.click(function(){
-		countInput.val(++currenVal);
+		var currenVal = $(this).parent().find(countInput).val();
+		$(this).parent().find(".input-numbers-input").val(++currenVal);
 	})
 
 	countMinus.click(function(){
-		if(currenVal > 1) countInput.val(--currenVal)
+		var currenVal = $(this).parent().find(countInput).val();
+		if(currenVal > 1) $(this).parent().find(".input-numbers-input").val(--currenVal);
 	})
 })
