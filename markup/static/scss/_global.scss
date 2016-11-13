@@ -99,3 +99,14 @@ div[class *="img-holder"] {
 		margin-bottom: $grid-gutter-width-base / 2;
 	}
 }
+.d {
+	&n {
+		display: none !important;
+	}
+	&b {
+		display: block !important;
+	}
+	&i {
+		display: inline-block !important;
+	}
+}
