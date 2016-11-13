@@ -9,24 +9,16 @@
         %=symbols=%
 
         <section class="page__wrapper">
-
+{{> order/order}}
             <!-- Include your modules here -->
-
-            <!-- {{> productGrid/productGrid}} -->
-            <!-- {{> productRecommendation/productRecommendation}} -->
-            <!-- {{> sidebarNav/sidebarNav}} -->
-            {{> inputTypeNumber/inputTypeNumber}}
-            <br>
-            {{> inputTypeNumber/inputTypeNumber}}
-            <br>
-            {{> inputTypeNumber/inputTypeNumber}}
-            <!-- {{> pagination/pagination}} -->
 
             <div class="page__buffer"></div>
 
         </section>
 
-        <!-- {{> footer/footer}} -->
+        <footer class="page__footer">
+            {{> footer/footer}}
+        </footer>
 
         <script src="%=static=%js/separate-js/svg4everybody.min.js"></script>
         <script>svg4everybody();</script>
