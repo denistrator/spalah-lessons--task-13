@@ -1,0 +1,24 @@
+input, .input {
+	background: transparent;
+	border: 1px solid $darken;
+	border-top-color: transparent;
+	border-right-color: transparent;
+	border-left-color: transparent;
+	font-family: $font-family-base;
+	outline: none;
+	padding: 10px 0;
+	width: 100%;
+	&:focus {
+		border-top-color: $darken; 
+		border-right-color: $darken; 
+		border-left-color: $darken;
+		padding-left: 5px;
+	}
+}
+&::-webkit-input-placeholder { color: $darken; font-size: $font-size; font-weight: 400; font-family: $font-family-base;}
+&:focus::-webkit-input-placeholder {color: transparent}
+
+
+.forms {
+	padding-top: 30px;
+}
