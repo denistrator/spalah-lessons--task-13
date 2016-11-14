@@ -86,11 +86,12 @@
       clear: both;
     }
     &-img {
-      width: 35%;
+      width: 50%;
       float: left;
     }
     &-title {
-      width: 65%;
+      width: 50%;
+      margin-bottom: 30px;
     }
     &-close {
       position: absolute;
@@ -120,13 +121,13 @@
   }
   
 }
-@media all and (max-width: 768px) {
+@media all and (max-width: 500px) {
   .order {
     &-img {
-      width: 50%;
+      width: 70%;
     }
     &-title {
-      width: 50%;
+      width: 100%;
     }
   }
 }
