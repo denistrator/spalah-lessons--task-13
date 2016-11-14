@@ -1,0 +1,43 @@
+.choose-color {
+    width: 40px;
+    height: 40px;
+    border: none;
+    &:hover {
+        border: solid 1px black;
+        width: 42px;
+        height: 42px;
+    }
+    &-yellow {
+        background-color: #f2f1bb;
+    }
+    &-pink {
+        background-color: #f2cbcd;
+    }
+    &-blue {
+        background-color: #d2ebef;
+    }
+}
+.add-wish {
+    margin-left: 30px;
+    img {
+        width: 70%;
+    }
+}
+.product-info {
+    font-size: 19px;
+    &-title {
+        @extend .h3;
+        text-align: left;
+    }
+    &-price {
+        font-size: 23px;
+        font-weight: bold;
+        margin: 40px 0;
+    }
+    table {
+        margin: 50px 0 30px;
+        tr {
+            margin-bottom: 30px;
+        }
+    }
+}    
