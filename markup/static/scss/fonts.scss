@@ -58,3 +58,16 @@ $CustomFont: 'CustomFont', Helvetica, Arial, sans-serif;
 .icon-pinterest:before {
   content: "\e904";
 }
+
+@font-face {
+    font-family: 'Microsoft Phags Pa', sans-serif;
+    src: url('../fonts/phagspa.ttf');
+    font-weight: 400;       // For normal width. It could has another value   
+    font-style: normal;     // Also could has another value
+}
+@font-face {
+    font-family: 'Microsoft Phags Pa', sans-serif;
+    src: url('../fonts/ufonts.com_microsoft-phagspa-bold.ttf');
+    font-weight: 700;       // For normal width. It could has another value   
+    font-style: normal;     // Also could has another value
+}
