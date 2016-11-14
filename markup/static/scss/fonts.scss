@@ -18,14 +18,56 @@ $CustomFont: 'CustomFont', Helvetica, Arial, sans-serif;
 */
 
 @font-face {
+  font-family: 'icomoon';
+  src:  url('../fonts/social-icons/icomoon.eot?l2hxes');
+  src:  url('../fonts/social-icons/icomoon.eot?l2hxes#iefix') format('embedded-opentype'),
+    url('../fonts/social-icons/icomoon.ttf?l2hxes') format('truetype'),
+    url('../fonts/social-icons/icomoon.woff?l2hxes') format('woff'),
+    url('../fonts/social-icons/icomoon.svg?l2hxes#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-facebook:before {
+  content: "\e900";
+}
+.icon-google-plus:before {
+  content: "\e901";
+}
+.icon-twitter:before {
+  content: "\e902";
+}
+.icon-instagram:before {
+  content: "\e903";
+}
+.icon-pinterest:before {
+  content: "\e904";
+}
+
+@font-face {
     font-family: 'Microsoft Phags Pa', sans-serif;
     src: url('../fonts/phagspa.ttf');
     font-weight: 400;       // For normal width. It could has another value   
     font-style: normal;     // Also could has another value
-    }
+}
 @font-face {
     font-family: 'Microsoft Phags Pa', sans-serif;
     src: url('../fonts/ufonts.com_microsoft-phagspa-bold.ttf');
     font-weight: 700;       // For normal width. It could has another value   
     font-style: normal;     // Also could has another value
-    }
+}
