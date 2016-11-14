@@ -11,12 +11,12 @@ $(".input-numbers-input").on('change', function(){
     countSum(item, priceItem, amount);
 });
 $('.input-numbers-btn-minus').on('click', function(){
-    var amount = $(this).next('.input-numbers-input').val();
+    var amount = +$(this).next('.input-numbers-input').val()-1;
      var priceItem = $(this).parent().parent().next().children().children().html();
     countSum($(this), priceItem, amount);   
 })
 $('.input-numbers-btn-plus').on('click', function(){
-    var amount = $(this).prev('.input-numbers-input').val();
+    var amount = +$(this).prev('.input-numbers-input').val()+1;
      var priceItem = $(this).parent().parent().next().children().children().html();
     countSum($(this), priceItem, amount);   
 })
