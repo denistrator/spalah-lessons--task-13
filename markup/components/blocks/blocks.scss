@@ -3,7 +3,7 @@
 
 .block {
 	&-title {
-
+		text-align: center;
 	}
 	&-inverse {
 		color: $block-inverse-color;
@@ -27,7 +27,7 @@
 	}
 }
 .wish-title:before {
-	ефкыpadding-right: (45 / 1550 * 100%);
+	padding-right: (45 / 1550 * 100%);
 	content: url(../img/general/wish-list-icon.png);
 
 }
