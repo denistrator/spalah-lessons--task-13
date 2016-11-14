@@ -25,3 +25,12 @@
 
 	}
 }
+.wish-title:before {
+	ефкыpadding-right: (45 / 1550 * 100%);
+	content: url(../img/general/wish-list-icon.png);
+
+}
+.cart-title:before {
+	padding-right: (45 / 1550 * 100%);
+	content: url(../img/general/cart-icon.png);
+}
