@@ -7,7 +7,7 @@
 	}
 	color: #fff;
 	padding: 24px 30px;
-	border: none;
+	border: 1px solid transparent;
 	text-transform: uppercase;
 	background-color: $darken;
 	outline: none;
@@ -16,6 +16,9 @@
 	display: inline-block;
 	margin: auto;
 	font-family: $font-family-base;
+	.block-inverse & {
+		border-color: #fff;
+	}
 
 	&:hover {
 		 background: lighten($darken, 20%);
