@@ -1,3 +1,6 @@
+.product-info-wrapper {
+    margin: 80px 0;
+}
 .choose-color {
     width: 40px;
     height: 40px;
@@ -20,7 +23,7 @@
 .add-wish {
     margin-left: 30px;
     img {
-        width: 70%;
+        width: 87%;
     }
 }
 .product-info {
@@ -34,10 +37,30 @@
         font-weight: bold;
         margin: 40px 0;
     }
-    table {
+    .table {
+        display: table;
         margin: 50px 0 30px;
-        tr {
-            margin-bottom: 30px;
+    }
+    .table-row {
+        display: table-row;
+    }
+    .cell {
+        display: table-cell;
+        padding: 0 30px 30px 0;
+    }
+    
+}
+.owl-carousel {
+    position: relative;
+    .owl-nav {
+        .owl-next, .owl-prev {
+            position: absolute;
+            top: 50%;
+            margin-top: -30px;
+            right: 0;
+        }
+        .owl-prev {
+            left: 0;
         }
     }
-}    
+}

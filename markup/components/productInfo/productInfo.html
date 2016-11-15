@@ -1,36 +1,36 @@
 
-    
+    <div class="product-info-wrapper">
         <div class="row">
-            <div class="col-md-6 col-xs-12">
+            <div class="col-md-7 col-xs-12">
                 <div class="owl-carousel" id="sliderProduct">
                 {{#each sliderProduct}}
                 <div class="slider-product-img">
                     <img src="static/img/content/slider/{{imgName}}.jpg" alt="">
                 </div>
                 {{/each}}
-</div>
+                </div>
             </div>
-            <div class="col-md-6 col-xs-12">
+            <div class="col-md-4 col-md-offset-1 col-xs-12">
                 <div class="product-info">
                     <div class="product-info-title">Lemon-Pattern Ankle Socks</div>
                     <div class="product-info-price">$<span>1.50</span></div>
                     <div class="product-info-desc">Patterned with a burst of cascading stars and bright crabs, this pair of ankle socks is a perfect antidote to the winter blues (or a great way to give yourself a boost if you're feeling, you know… crabby).</div>
-                    <table>
-                        <tr>
-                            <td>Colour</td>
-                            <td>
+                    <div class="table">
+                        <div class="table-row">
+                            <div class="cell">Colour</div>
+                            <div class="cell">
                                 <form action="">
                                     <button id="chooseColorYellow" class="choose-color choose-color-yellow"></button>
                                     <button id="chooseColorPink" class="choose-color choose-color-pink"></button>
                                     <button id="chooseColorBlue" class="choose-color choose-color-blue"></button>
                                 </form>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>Quantity</td>
-                            <td>{{> inputTypeNumber/inputTypeNumber}}</td>
-                        </tr>
-                    </table>
+                            </div>
+                        </div>
+                        <div class="table-row">
+                            <div class="cell">Quantity</div>
+                            <div class="cell">{{> inputTypeNumber/inputTypeNumber}}</div>
+                        </div>
+                    </div>
                     <form>
                         <button class="btn">Add to cart</button>
                         <button class="btn add-wish"><img src="static/img/general/wish-list-icon-inverse.png" alt=""></button>    
@@ -39,5 +39,5 @@
                 </div>
             </div>
         </div>
-    
+    </div>
     
