@@ -1,1 +1,108 @@
+.main {
+    width: 100vw;
+}
+.lookbook {
+    height: 1500px;
+    background: url(/static/img/content/1.png) 200px 200px no-repeat,
+                url(/static/img/content/3.png) 250px 1100px no-repeat,
+                url(/static/img/content/2.png) 800px 700px no-repeat;
+    background-size: 80px;
+
+    img {
+        max-width: 60%;
+     }
+    .first {
+        position: relative;
+        & :first-child {
+            position: absolute;
+            right: 0;
+            top: 300px
+        }
+        & :last-child {
+            position: absolute;
+            top: 450px;
+            left: 0;
+        }
+    }
+    .second {
+        position: relative;
+        & :first-child {
+            position: absolute;
+            right: 0;
+            top: 0;
+        }
+        & :last-child {
+            position: absolute;
+            left: 0;
+            top: 900px;
+        }
+    }
+}
+
+@media screen and (max-width: 960px) {
+    .first, .second {
+        img {
+            max-width: 70%;
+        }
+
+    }
+    .lookbook {
+    background: url(/static/img/content/1.png) 50px 200px no-repeat,
+                url(/static/img/content/3.png) 80px 1100px no-repeat,
+                url(/static/img/content/2.png) 450px 750px no-repeat;
+    background-size: 80px;
+
+    }
+  }
+
+
+@media screen and (max-width: 760px) {
+    .first, .second {
+        img {
+            max-width: 70%;
+        }
+
+    }
+    .lookbook {
+    background: url(/static/img/content/1.png) 50px 200px no-repeat,
+                url(/static/img/content/3.png) 80px 1100px no-repeat,
+                url(/static/img/content/2.png) 300px 750px no-repeat;
+    background-size: 80px;
+
+    }
+  }
+
+@media screen and (max-width: 560px) {
+    .lookbook {
+        height: 1300px;
+    }
+    .first, .second {
+        img {
+            max-width: 70%;
+        }
+
+    }
+    .lookbook {
+    background: url(/static/img/content/1.png) 50px 200px no-repeat,
+                url(/static/img/content/3.png) 70px 1100px no-repeat,
+                url(/static/img/content/2.png) 280px 750px no-repeat;
+    background-size: 80px;
+
+    }
+  }
+@media screen and (max-width: 480px) {
+    .first, .second {
+        img {
+            max-width: 50%;
+        }
+
+    }
+    .lookbook {
+        background: url(/static/img/content/1.png) 50px 200px no-repeat,
+                    url(/static/img/content/3.png) 250px 1100px no-repeat,
+                    url(/static/img/content/2.png) 280px 750px no-repeat;
+        background-size: 80px;
+
+    }
+  }
 
