@@ -6,6 +6,8 @@
 		@include nl();
 	}
 	&-item {
+		display: block;
+		overflow: hidden;
 		&:first-child {
 			margin-bottom: 4px;
 		}
@@ -34,5 +36,19 @@
 	a {
 		color: inherit;
 		text-decoration: inherit;
+	}
+}
+@include media-breakpoint-down(sm) {
+	.sidebar-nav {
+		@include cf();
+		margin: 15px auto;
+		&-list {
+			float: right;
+			@include cf();
+		}
+		&-section-link {
+			float: left;
+			margin: 5px;
+		}
 	}
 }

@@ -1,6 +1,9 @@
 .pagination {
 	&-control {
-
+		text-align: right;
+		padding-top: (100 / 1550 * 100%);
+		padding-bottom: (100 / 1550 * 100%); 
+		margin-right: (90 / 1550 * 100%);
 	}
 	&-list {
 		@include nl();

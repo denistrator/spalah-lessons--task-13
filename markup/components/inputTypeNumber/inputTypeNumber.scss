@@ -9,6 +9,9 @@
 		padding: 0 40px;
 		text-align: center;
 		border: solid 1px black;
+		&:focus {
+			padding: 0 40px;
+		}
 		&.no-js {
 			padding: 0;
 		}
