@@ -1,4 +1,8 @@
 .breadcrumbs {
+	&-control {
+		padding-top: (100 / 1550 * 100%);
+		padding-bottom: (100 / 1550 * 100%);
+	}
 	list-style: none;
 	margin: 0;
 	padding: 0;
@@ -7,6 +11,9 @@
 	}
 	&-link {
 		color: #000;
+	}
+	@include media-breakpoint-down(sm) {
+		display: none;
 	}
 }
 .breadcrumbs-item+.breadcrumbs-item:before {
