@@ -20,4 +20,7 @@
 	&:hover {
 		 background: lighten($darken, 20%);
 	}
+	.uppercase{
+	text-transform: uppercase;
+}
 }
