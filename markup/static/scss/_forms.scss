@@ -20,6 +20,11 @@ input, .input {
 			border-color: #fff;
 		}
 	}
+	&-sm {
+		width: 20% !important; 
+		margin-right: 18px;
+		border: 1px solid $darken;
+	}
 }
 &::-webkit-input-placeholder {
 	color: $darken;
@@ -39,4 +44,19 @@ input, .input {
 	&-submit {
 		margin-top: (100 / 390 * 100%);
 	}
+}
+.slash {
+	color: black;
+	font-size: 36px;
+	font-weight: 100;
+	padding-right: 15px;
+	vertical-align: bottom;
+}
+label, .label {
+	width: 30%;
+	display: inline-block;
+	color: $darken;
+	font-size: $font-size;
+	font-weight: 400;
+	font-family: $font-family-base;
 }
