@@ -14,12 +14,22 @@ $(document).ready(function(){
 			//перебираем все элементы массива
 			for(var i = 0; i < arrayOfObjects.length; i++){
 				//выводим содержимое записи, ссылку для записи в зависимости от ее id, который назначается при добавлении события
-				$(place).append('<div class="order table" data-href="'+arrayOfObjects[i].id+'" data-price="'+Number(arrayOfObjects[i].price)+'"><div class="order-img cell"><a href="product-page.html"><img src="'+arrayOfObjects[i].img+'" alt=""></a></div><div class="order-title cell"><p>'+arrayOfObjects[i].title+'</p></div><div class="order-count cell"><div class="input-numbers"><button class="input-numbers-btn input-numbers-btn-minus no-js">-</button><input type="number" class="input-numbers-input no-js" min="1" value="'+arrayOfObjects[i].amount+'"><button class="input-numbers-btn input-numbers-btn-plus no-js">+</button></div></div><div class="order-sum cell"><p>$<span>'+Number(arrayOfObjects[i].price)+'</span></p></div><div class="order-add cell"><button class="btn order-add-btn">Add to cart</button><button class="order-close"></button></div></div>')
+				$(place).append('<div class="order table" data-href="'+arrayOfObjects[i].id+'" data-price="'+Number(arrayOfObjects[i].price)+'"><div class="order-img cell"><a href="product-page.html"><img src="'+arrayOfObjects[i].img+'" alt=""></a></div><div class="order-title cell"><p>'+arrayOfObjects[i].title+'</p></div><div class="order-count cell"><div class="input-numbers"><button class="input-numbers-btn input-numbers-btn-minus no-js">-</button><input type="number" class="input-numbers-input no-js" min="1" value="'+arrayOfObjects[i].amount+'"><button class="input-numbers-btn input-numbers-btn-plus no-js">+</button></div></div><div class="order-sum cell"><p>$<span>'+Number(arrayOfObjects[i].price)+'</span></p></div><div class="order-add cell"><button class="btn order-add-btn">Add to cart</button><button class="order-close"></button></div></div>');
+              
 			};
+            $(place).append('<div class="order table"><div class="order-img cell"></div><div class="order-title cell"></div><div class="order-count cell">Total</div><div class="order-sum cell"><p>$<span></span></p></div><div class="order-add cell"></div>');
+            getSumOrder();
 		};
 	};
 	showAllEvents(".cart-wrapper");
-	function changeCartBadge(){
+	function getSumOrder(){
+        var sum = 0;
+    for(var i = 1; i <= $('.order-sum').length; i++){
+        sum += +$('.order-sum').eq(i).children('span').html();
+        }
+        $('.order-sum').last().children('span').html(sum);
+    }
+    function changeCartBadge(){
 	    $('.badge').html(localStorage.length);    
 	}
 	changeCartBadge();
