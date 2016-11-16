@@ -10,17 +10,23 @@
 
         <section class="page__wrapper">
             {{> header/header}}
-            <div class="container">
+            <div class="container pb-m">
+                <div class="row">
+                    <div class="col-md-9 offset-md-3">
+                        <div class="breadcrumbs-control">
+                            <ul class="breadcrumbs hidden-xs">
+                                <li class="breadcrumbs-item"><a href="#" class="breadcrumbs-link">Store</a></li>
+                                <li class="breadcrumbs-item"><a href="#" class="breadcrumbs-link">Women</a></li>
+                                <li class="breadcrumbs-item"><span>Crab Pattern Ankle socks</span></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
                 <div class="row">
                     <div class="col-lg-3 col-md-2">
                         {{> sidebarNav/sidebarNav}}
                     </div>
                     <div class="col-lg-9 col-md-10">
-                        <ul class="breadcrumbs hidden-xs">
-                    		<li class="breadcrumbs-item"><a href="#" class="breadcrumbs-link">Store</a></li>
-                    		<li class="breadcrumbs-item"><a href="#" class="breadcrumbs-link">Women</a></li>
-                    		<li class="breadcrumbs-item"><span>Crab Pattern Ankle socks</span></li>
-                    	</ul>
                         {{> productInfo/productInfo}}
                         <h2 class="h2">You might also like</h2>
                         {{> productRecommendation/productRecommendation}}

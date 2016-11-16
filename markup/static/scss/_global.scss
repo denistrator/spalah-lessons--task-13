@@ -110,3 +110,9 @@ div[class *="img-holder"] {
 		display: inline-block !important;
 	}
 }
+
+.pb {
+	&-m {
+		padding-bottom: ( 170 / 1550 * 100%);
+	}
+}

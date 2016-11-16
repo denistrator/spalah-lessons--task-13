@@ -24,10 +24,10 @@ $(document).ready(function(){
 	showAllEvents(".cart-wrapper");
 	function getSumOrder(){
         var sum = 0;
-    for(var i = 1; i <= $('.order-sum').length; i++){
-        sum += +$('.order-sum').eq(i).children('span').html();
+    for(var i = 0; i <= $('.order-sum').length-1; i++){
+        sum += Number($('.order-sum').eq(i).children().children('span').html());
         }
-        $('.order-sum').last().children('span').html(sum);
+        $('.order-sum').last().children().children('span').html(sum);
     }
     function changeCartBadge(){
 	    $('.badge').html(localStorage.length);    
