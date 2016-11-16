@@ -26,12 +26,15 @@
 
 	}
 }
+
 .wish-title:before {
+	text-align: center;
 	padding-right: (45 / 1550 * 100%);
 	content: url(../img/general/wish-list-icon.png);
 
 }
 .cart-title:before {
+	text-align: center;
 	padding-right: (45 / 1550 * 100%);
 	content: url(../img/general/cart-icon.png);
 }

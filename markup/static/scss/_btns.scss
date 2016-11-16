@@ -8,6 +8,7 @@
 	color: #fff;
 	padding: 24px 30px;
 	border: none;
+	border: 1px solid transparent;
 	background-color: $darken;
 	outline: none;
 	vertical-align: top; // ! better to remove
@@ -15,6 +16,9 @@
 	display: inline-block;
 	margin: auto;
 	font-family: $font-family-base;
+	.block-inverse & {
+		border-color: #fff;
+	}
 
 	&:hover {
 		 background: lighten($darken, 20%);

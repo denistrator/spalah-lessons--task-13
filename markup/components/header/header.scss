@@ -8,7 +8,7 @@
     .navbar {
         ul {
             padding: 0;
-            margin: 20px 0 0 0;
+            margin: 12px 0 0 0;
             li {
                 display: inline-block;
                 & a {
@@ -17,6 +17,9 @@
             }
         }
     }
+    .footer-socials-item {
+              margin-left: 0;
+            }
     .control-panel {
         text-align: right;
         padding: 0;
@@ -24,6 +27,17 @@
         li {
             display: inline-block;
             width: 30%;
+            :last-child {
+              position: relative;
+
+            }
+            .badge {
+              font-size: 18px;
+              font-weight: 700;
+              position: absolute;
+              top:3px;
+              right: 15px;
+            }
         }
         img {
             width: 20px;
@@ -46,6 +60,7 @@
   font-size: 1em;
   display: block;
   width: 100%;
+
 }
 .main-menu a {
   display: block;
@@ -65,7 +80,11 @@
   content: attr(data-close);
 }
 
-@media screen and (min-width: 769px) {
+.hamburger {
+    width: 70px;
+}
+
+@media screen and (min-width: 779px) {
     .toggle-button {
         display: none;
     }
@@ -76,14 +95,60 @@
       width: calc(100% / 5);
       text-align: center;
       display: inline-block;
-      margin-right: -4px;
+      margin-right: -10px;
     }
     .main-menu a {
       color: black;
       border-bottom: 0;
     }
+
   }
-.hamburger {
-    width: 70px;
-    margin-top: -7px;
-}
+
+
+  @media screen and (max-width: 996px) {
+    .header .navbar ul {
+      margin: 3px 0 0 0;
+    }
+    .main-menu li {
+      font-size: 16px;
+    }
+    .header .control-panel {
+      margin: 10px 0 0 0;
+    }
+    .header .control-panel img {
+      width: 15px;
+    }
+    .header .control-panel li .badge {
+      font-size: 14px;
+    }
+  }
+
+@media screen and (max-width: 470px) {
+    .header .control-panel img {
+      width: 15px;
+    }
+    .header .control-panel li {
+      width: 27%;
+    }
+    .header .control-panel {
+      margin: 7px 0 0 0;
+    }
+    .hamburger {
+      width: 50px;
+    }
+    .header .control-panel li .badge {
+      font-size: 8px;
+      top:15px;
+      right: 26px;
+    }
+  }
+  @media screen and (max-width: 430px) {
+    .header .control-panel li .badge {
+      right: 24px;
+    }
+  }
+ @media screen and (max-width: 385px) {
+    .header .control-panel li .badge {
+      right: 23px;
+    }
+  }
