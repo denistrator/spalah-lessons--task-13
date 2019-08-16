@@ -9,7 +9,7 @@ input, .input {
 		width: 100%;
 		&:focus {
 			padding-left: 5px;
-		}		
+		}
 	}
 	&:focus {
 		border-color: $darken;
@@ -21,18 +21,18 @@ input, .input {
 		}
 	}
 	&-sm {
-		width: 20% !important; 
+		width: 20% !important;
 		margin-right: 18px;
 		border: 1px solid $darken;
 	}
 }
-&::-webkit-input-placeholder {
+::-webkit-input-placeholder {
 	color: $darken;
 	font-size: $font-size;
 	font-weight: 400;
 	font-family: $font-family-base;
 }
-&:focus::-webkit-input-placeholder { color: transparent !important}
+:focus::-webkit-input-placeholder { color: transparent !important}
 .block-inverse {
 	::-webkit-input-placeholder {
 		color: #fff;
